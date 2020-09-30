@@ -1,0 +1,11 @@
+1465923411136        New Condition        EXPERIMENTAL         null                
+1465923411144        New Question         Lvl 1                null                
+1465923413213        Response             CORRECT              2069                
+1465923416232        New Question         Lvl 1                null                
+1465923417729        Response             CORRECT              1497                
+1465923420744        New Question         Lvl 1                null                
+1465923421878        Response             CORRECT              1134                
+1465923424903        New Question         Lvl 1                null                
+1465923426444        Response             CORRECT              1541                
+1465923429464        New Question         Lvl 1                null                
+1465923430643        Response             CORRECT              1179                

@@ -1,0 +1,16 @@
+1465923563368        New Condition        CONTROL              null                
+1465923563378        New Question         Lvl 1                null                
+1465923566304        Response             WRONG                2926                
+1465923569331        New Question         Lvl 1                null                
+1465923571200        Response             WRONG                1869                
+1465923574226        New Question         Lvl 1                null                
+1465923575514        Response             WRONG                1288                
+1465923578547        New Question         Lvl 1                null                
+1465923580247        Response             CORRECT              1700                
+1465923583266        New Question         Lvl 1                null                
+1465923584658        Response             CORRECT              1392                
+1465923587683        New Question         Lvl 1                null                
+1465923589219        Response             CORRECT              1536                
+1465923592243        New Question         Lvl 1                null                
+1465923612272        Response             WRONG                20029               
+1465923615298        New Question         Lvl 1                null                
