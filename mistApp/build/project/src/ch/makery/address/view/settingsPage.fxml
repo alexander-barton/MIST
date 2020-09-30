@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import jidefx.scene.control.combobox.*?>
+<?import jidefx.scene.control.field.*?>
+<?import org.controlsfx.control.*?>
+<?import org.controlsfx.control.textfield.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory ?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.SettingsPageController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="175.0" text="PREFERENCES" textAlignment="CENTER" AnchorPane.bottomAnchor="597.0" AnchorPane.leftAnchor="307.0" AnchorPane.rightAnchor="318.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label layoutX="36.0" layoutY="79.0" text="Conditions" underline="true" />
+      <RadioButton fx:id="radioBtnMouse" layoutX="391.0" layoutY="114.0" mnemonicParsing="false" selected="true" text="Mouse Click">
+         <toggleGroup>
+            <ToggleGroup fx:id="scanGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioBtnKey" layoutX="390.0" layoutY="156.0" mnemonicParsing="false" text="Keyboard" toggleGroup="$scanGroup" />
+      <RadioButton fx:id="radioBtnTime" layoutX="391.0" layoutY="197.0" mnemonicParsing="false" text="Timed (input to the right)" toggleGroup="$scanGroup" />
+      <Label layoutX="173.0" layoutY="78.0" text="Acquistions/Time (s)" underline="true" />
+      <Label layoutX="379.0" layoutY="81.0" text="Scanner Signal" underline="true" />
+      <Label layoutX="639.0" layoutY="112.0" prefHeight="21.0" prefWidth="57.0" text="Left" />
+      <Label layoutX="639.0" layoutY="154.0" prefHeight="21.0" prefWidth="57.0" text="Right" />
+      <Label layoutX="639.0" layoutY="195.0" prefHeight="21.0" prefWidth="57.0" text="Confirm" />
+      <Label layoutX="647.0" layoutY="79.0" text="Inputs" underline="true" />
+      <Button fx:id="btnStart" layoutX="661.0" layoutY="492.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnAction" prefHeight="67.0" prefWidth="114.0" text="START">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Slider fx:id="sliderConSpeed" blockIncrement="1.0" layoutX="81.0" layoutY="296.0" majorTickUnit="1.0" max="9.0" min="1.0" minorTickCount="0" prefHeight="28.0" prefWidth="209.0" showTickMarks="true" snapToTicks="true" />
+      <Label layoutX="39.0" layoutY="259.0" text="Control Condition Speed" underline="true" />
+      <Label layoutX="37.0" layoutY="300.0" prefHeight="21.0" prefWidth="35.0" text="Slow" />
+      <Label layoutX="296.0" layoutY="300.0" prefHeight="21.0" prefWidth="42.0" text="Fast" />
+      <Label layoutX="338.0" layoutY="259.0" text="Number of Repetitions" underline="true" />
+      <Label layoutX="439.0" layoutY="300.0" prefHeight="21.0" prefWidth="42.0" text="(1-99)" />
+      <Label layoutX="398.0" layoutY="352.0" text="Order of Conditions" underline="true" />
+      <RadioButton fx:id="radioBtnStrict" layoutX="371.0" layoutY="395.0" mnemonicParsing="false" selected="true" text="Strict">
+         <toggleGroup>
+            <ToggleGroup fx:id="conditionsGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioBtnRan" layoutX="460.0" layoutY="395.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="121.0" text="Randomized" toggleGroup="$conditionsGroup" />
+      <Slider fx:id="sliderExpDiff" blockIncrement="1.0" layoutX="79.0" layoutY="391.0" majorTickUnit="1.0" max="6.0" min="1.0" minorTickCount="0" prefHeight="18.0" prefWidth="217.0" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Label layoutX="36.0" layoutY="352.0" text="Experimental Condition Difficulty" underline="true" />
+      <Label layoutX="39.0" layoutY="394.0" prefHeight="21.0" prefWidth="35.0" text="Easy" />
+      <Label layoutX="299.0" layoutY="395.0" prefHeight="21.0" prefWidth="35.0" text="Diff." />
+
+      <Label layoutX="647.0" layoutY="352.0" text="N-Back Number" underline="true" />
+      <Label layoutX="36.0" layoutY="440.0" text="FeedBack Messages" underline="true" />
+      <TextField fx:id="txtCor" layoutX="36.0" layoutY="471.0" prefHeight="31.0" prefWidth="132.0" text="CORRECT" />
+      <TextField fx:id="txtInCor" layoutX="36.0" layoutY="510.0" prefHeight="31.0" prefWidth="132.0" text="INCORRECT" />
+      <TextField fx:id="txtRec" layoutX="36.0" layoutY="550.0" prefHeight="31.0" prefWidth="132.0" text="RECORDED" />
+      <TextField fx:id="txtNotRec" layoutX="36.0" layoutY="593.0" prefHeight="31.0" prefWidth="132.0" text="NOT RECORDED" />
+      <Label layoutX="186.0" layoutY="476.0" prefHeight="21.0" prefWidth="57.0" text="Correct" />
+      <Label layoutX="186.0" layoutY="515.0" prefHeight="21.0" prefWidth="61.0" text="Incorrect" />
+      <Label layoutX="186.0" layoutY="555.0" prefHeight="21.0" prefWidth="72.0" text="Recorded" />
+      <Label layoutX="186.0" layoutY="598.0" prefHeight="21.0" prefWidth="97.0" text="Not Recorded" />
+      <TextField fx:id="txtID" editable="false" layoutX="345.0" layoutY="482.0" text="01" />
+      <TextField fx:id="txtSaveDir" editable="false" layoutX="345.0" layoutY="561.0" text="C:\Desktop\Sub01" />
+      <Label layoutX="405.0" layoutY="440.0" text="Subject ID" underline="true" />
+      <Label layoutX="395.0" layoutY="526.0" text="File Directory" underline="true" />
+      <Button fx:id="btnID" layoutX="541.0" layoutY="482.0" mnemonicParsing="false" text="Set ID" />
+      <Button fx:id="btnDir" layoutX="541.0" layoutY="561.0" mnemonicParsing="false" text="Set Directory" />
+      <Label layoutX="733.0" layoutY="394.0" prefHeight="21.0" prefWidth="42.0" text="(1-99)" />
+      <MaskTextField fx:id="txtLeftKey" alignment="CENTER" conversionMask="L" initialText="" inputMask="X" layoutX="723.0" layoutY="107.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="42.0" text="1" />
+      <MaskTextField fx:id="txtRightKey" alignment="CENTER" conversionMask="L" inputMask="X" layoutX="723.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="42.0" text="3" />
+      <MaskTextField fx:id="txtConfKey" alignment="CENTER" conversionMask="L" inputMask="X" layoutX="723.0" layoutY="190.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="42.0" text="2" />
+      <IntegerField fx:id="txtRestT" alignment="CENTER" defaultValue="10" layoutX="212.0" layoutY="109.0" max="100000" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="1" prefHeight="31.0" prefWidth="57.0" text="10" />
+      <IntegerField fx:id="txtConT" alignment="CENTER" defaultValue="10" layoutX="212.0" layoutY="149.0" max="100000" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="1" prefHeight="31.0" prefWidth="57.0" text="10" />
+      <IntegerField fx:id="txtExpT" alignment="CENTER" defaultValue="10" layoutX="212.0" layoutY="190.0" max="100000" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="1" prefHeight="31.0" prefWidth="57.0" text="10" />
+      <IntegerField fx:id="txtRep" alignment="CENTER" defaultValue="1" layoutX="366.0" layoutY="295.0" max="99" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="1" prefHeight="31.0" prefWidth="57.0" text="1" />
+      <IntegerField fx:id="txtNBack" alignment="CENTER_RIGHT" layoutX="661.0" layoutY="389.0" max="99" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="57.0" spinnersVisible="true" text="0" />
+      <MaskTextField fx:id="txtKeySig" alignment="CENTER" conversionMask="L" inputMask="X" layoutX="500.0" layoutY="151.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="42.0" text="a" />
+      <ToggleSwitch fx:id="toggleRest" layoutX="26.0" layoutY="113.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="23.0" prefWidth="97.0" text="Rest" />
+      <ToggleSwitch fx:id="toggleCon" layoutX="26.0" layoutY="152.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="23.0" prefWidth="114.0" text="Control" />
+      <ToggleSwitch fx:id="toggleExp" layoutX="26.0" layoutY="194.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="23.0" prefWidth="151.0" text="Experimental" />
+      <ToggleSwitch fx:id="toggleTimeout" layoutX="538.0" layoutY="258.0" prefHeight="23.0" prefWidth="227.0" text="Control Without Timeout" />
+      <ToggleSwitch fx:id="toggleSound" layoutX="614.0" layoutY="310.0" prefHeight="23.0" prefWidth="151.0" text="Enable Sound" />
+   </children>
+</AnchorPane>

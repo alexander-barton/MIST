@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.transform.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.Rectangle>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="testPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onKeyTyped="#onKeyTyped" onMouseClicked="#onMouseClicked" prefHeight="650.0" prefWidth="800.0" style="-fx-border-color: CHARTREUSE; -fx-border-style: SOLID; -fx-border-width: 10; -fx-border-radius: null;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.TestPageController">
+   <children>
+      <ProgressBar fx:id="barTimer" layoutX="21.0" layoutY="263.0" prefHeight="23.0" prefWidth="759.0" progress="0.0" />
+      <Group layoutX="21.0" layoutY="47.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff281f" height="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="385.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1ff1f" height="23.0" layoutX="382.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="190.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#24d124" height="23.0" layoutX="569.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="190.0" />
+         </children>
+      </Group>
+      <Group fx:id="groupInput" layoutX="493.0" layoutY="326.0" onKeyTyped="#onKeyTyped">
+         <children>
+            <Group fx:id="g0" layoutX="108.0">
+               <children>
+                  <Rectangle fx:id="rec0" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num0" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g1" layoutX="167.0" layoutY="32.0">
+               <children>
+                  <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g2" layoutX="212.0" layoutY="90.0">
+               <children>
+                  <Rectangle fx:id="rec2" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num2" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="2" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g3" layoutX="212.0" layoutY="147.0">
+               <children>
+                  <Rectangle fx:id="rec3" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num3" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="3" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g4" layoutX="167.0" layoutY="204.0">
+               <children>
+                  <Rectangle fx:id="rec4" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num4" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="4" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g5" layoutX="108.0" layoutY="234.0">
+               <children>
+                  <Rectangle fx:id="rec5" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num5" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="5" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g6" layoutX="45.0" layoutY="204.0">
+               <children>
+                  <Rectangle fx:id="rec6" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num6" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="6" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g7" layoutY="147.0">
+               <children>
+                  <Rectangle fx:id="rec7" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num7" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="7" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g8" layoutY="90.0">
+               <children>
+                  <Rectangle fx:id="rec8" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num8" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="8" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="g9" layoutX="45.0" layoutY="32.0">
+               <children>
+                  <Rectangle fx:id="rec9" arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label fx:id="num9" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="45.0" text="9" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Separator layoutX="21.0" layoutY="286.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="759.0" />
+      <TextField fx:id="txtGo" editable="false" layoutX="50.0" layoutY="326.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="393.0" />
+      <Polygon fx:id="arrowYou" fill="#0a0a0a" layoutX="493.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-15.0" />
+          <Double fx:value="15.0" />
+          <Double fx:value="15.0" />
+          <Double fx:value="15.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-15.0" />
+        </points>
+      </Polygon>
+      <Polygon fx:id="arrowThem" fill="#0a0a0a" layoutX="493.0" layoutY="29.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE">
+         <points>
+            <Double fx:value="-15.0" />
+            <Double fx:value="15.0" />
+            <Double fx:value="15.0" />
+            <Double fx:value="15.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-15.0" />
+         </points>
+      </Polygon>
+      <Label fx:id="lblYou" alignment="CENTER" layoutX="512.0" layoutY="77.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #e8ebee; -fx-border-color: BLACK; -fx-border-radius: null; -fx-border-width: 2; -fx-border-style: SOLID;" text="YOU" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblThem" alignment="CENTER" layoutX="512.0" layoutY="17.0" prefHeight="25.0" prefWidth="78.0" style="-fx-border-color: BLACK; -fx-border-style: SOLID; -fx-border-width: 2; -fx-border-radius: null; -fx-background-color: #e8ebee;" text="AVERAGE" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQuestion" alignment="CENTER" editable="false" layoutX="50.0" layoutY="126.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="125.0" prefWidth="700.0">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="txtFeedback" editable="false" layoutX="50.0" layoutY="377.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="393.0">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
