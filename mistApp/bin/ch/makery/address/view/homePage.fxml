@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="CENTER" hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="650.0" prefWidth="800.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.HomePageController">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" percentHeight="4.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" percentHeight="8.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="MIST" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <font>
+            <Font name="Eras Bold ITC" size="96.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Copyright C. Kirschbaum, D. Leurken, J.C. Pruessner, A. Barton 1995 - 2016" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <font>
+            <Font name="Eras Medium ITC" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSettings" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnAction" prefHeight="48.0" prefWidth="109.0" text="SETUP" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>

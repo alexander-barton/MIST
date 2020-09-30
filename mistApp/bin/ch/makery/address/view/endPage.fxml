@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="endPane" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.EndPageController">
+   <children>
+      <Label fx:id="lblEndInstruc" alignment="CENTER" layoutX="97.0" layoutY="152.0" prefHeight="225.0" prefWidth="606.0" text="WAIT FOR COORDINATOR/TESTER" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSettings" layoutX="14.0" layoutY="598.0" mnemonicParsing="false" onAction="#BtnSettingsPress" prefHeight="38.0" prefWidth="158.0" text="Return to Settings" />
+   </children>
+</AnchorPane>
