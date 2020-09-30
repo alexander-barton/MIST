@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="mistApp.jnlp">
+  <information>
+    <title>mistApp</title>
+    <vendor>makery.ch</vendor>
+    <description>MIST_StandAlone_Mac</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="mistApp.jar" size="29338" download="eager" />
+    <jar href="libs\controlsfx-8.40.10.jar" size="954085" download="eager" />
+    <jar href="libs\jidefx-common-b128-javadoc.jar" size="442609" download="eager" />
+    <jar href="libs\jidefx-common-b128-sources.jar" size="213087" download="eager" />
+    <jar href="libs\jidefx-common-b128.jar" size="279509" download="eager" />
+    <jar href="libs\jidefx-comparators-b128-javadoc.jar" size="46123" download="eager" />
+    <jar href="libs\jidefx-comparators-b128-sources.jar" size="19962" download="eager" />
+    <jar href="libs\jidefx-comparators-b128.jar" size="18216" download="eager" />
+    <jar href="libs\jidefx-converters-b128-javadoc.jar" size="205730" download="eager" />
+    <jar href="libs\jidefx-converters-b128-sources.jar" size="87087" download="eager" />
+    <jar href="libs\jidefx-converters-b128.jar" size="76900" download="eager" />
+    <jar href="libs\jidefx-decoration-b128-javadoc.jar" size="69399" download="eager" />
+    <jar href="libs\jidefx-decoration-b128-sources.jar" size="115409" download="eager" />
+    <jar href="libs\jidefx-decoration-b128.jar" size="123507" download="eager" />
+    <jar href="libs\jidefx-fields-b128-javadoc.jar" size="590090" download="eager" />
+    <jar href="libs\jidefx-fields-b128-sources.jar" size="172654" download="eager" />
+    <jar href="libs\jidefx-fields-b128.jar" size="352911" download="eager" />
+    <jar href="libs\jidefx-validation-b128-javadoc.jar" size="74242" download="eager" />
+    <jar href="libs\jidefx-validation-b128-sources.jar" size="24326" download="eager" />
+    <jar href="libs\jidefx-validation-b128.jar" size="32134" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="ch.makery.address.MainMISTApp"  name="MIST_StandAlone_Mac" />
+  <update check="background"/>
+</jnlp>
