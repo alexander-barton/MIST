@@ -15,7 +15,6 @@ Added features include:
 ## Running the MIST
 This version of the MIST was written and deployed using JDK 8u66.  It should work one any later JRE versions as well.  Some users have reported issues with older JRE's.
 
-To run the MIST download the .jar file and the resources folder[^1].
+To run the MIST download the .jar file and the resources folder<sup id="a1">[1](#f1)</sup>.
 
-
-[^1]: The resources folder contains the audio files for the sound feedback in the MIST.  Due to laziness on my part, if you launch the app in a location without the `resources/sound` folder AND enable sound feedback, the app will crash.  If you are not using sound, just disable the feature and you can launch the app from anywhere.
+<b id="f1">1</b>: The resources folder contains the audio files for the sound feedback in the MIST.  Due to laziness on my part, if you launch the app in a location without the `resources/sound` folder AND enable sound feedback, the app will crash.  If you are not using sound, just disable the feature and you can launch the app from anywhere.[↩](#a1)
