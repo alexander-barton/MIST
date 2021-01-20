@@ -19,6 +19,6 @@ To run the MIST download the .jar file and the resources folder<sup id="a1">[1](
 
 After the initial screen you will be presented with this screen:
 
-![][screens/MIST_home_numbered.png]
+![](screens/MIST_home_numbered.png)
 
 <b id="f1">1</b>: The resources folder contains the audio files for the sound feedback in the MIST.  Due to laziness on my part, if you launch the app in a location without the `resources/sound` folder AND enable sound feedback, the app will crash.  If you are not using sound, just disable the feature and you can launch the app from anywhere.[↩](#a1)
